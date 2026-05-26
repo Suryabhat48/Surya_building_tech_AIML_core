@@ -81,3 +81,39 @@ print(tup.count('A'))
 list1=list(tup)
 list1.sort()
 print(list1)
+# Now we will learn about the dictionaries in python which are used to store dat in key value pairs and they are unordered and mutable unlike lists and tuples 
+my_dict={"name":"Surya","age":20,"city":"Bangalore"}    
+print(my_dict)
+# We can also store different data types in a dictionary
+my_dict={"name":"Surya","age":20,"city":"Bangalore","is_student":True}
+print(my_dict)
+# We can also have nested dictionaries in python
+my_dict={"name":"Surya","age":20,"city":"Bangalore","is_student":True,"marks":{"maths":90,"science":95}}
+print(my_dict)
+# We can access the elements of a dictionary using keys
+print(my_dict["name"]) # This will print the value of the key "name"    
+print(my_dict["marks"]["maths"]) # This will print the value of the key "maths" in the nested dictionary "marks"
+# We can also modify the elements of a dictionary using keys
+my_dict["age"]=21
+print(my_dict)
+# We can also add new key value pairs to the dictionary
+my_dict ["country"]="India"
+print(my_dict)
+# We can also remove key value pairs from the dictionary using del keyword
+del my_dict["is_student"]   
+print(my_dict)  
+# We can also clear the dictionary using clear() method which removes all the key value pairs from the dictionary   
+my_dict.clear()
+print(my_dict)  
+# Dictionary methods 
+# .keys() method is used to get all the keys of the dictionary
+my_dict={"name":"Surya","age":20,"city":"Bangalore"}
+print(my_dict.keys())
+# .values() method is used to get all the values of the dictionary
+print(my_dict.values())
+# .items() method is used to get all the key value pairs of the dictionary as a list of tuples
+print(my_dict.items())
+# .get() method is used to get the value of the key entered 
+# Note :We have two methods to get the value of the key in a dictionary one is using the square brackets and the other one is using the get() method but the difference between them is that if we try to access a key which is not present in the dictionary using square brackets then it will raise an error but if we try to access a key which is not present in the dictionary using gett() method then it will return None instead of raising an error 
+print(my_dict.get("name")) # This will print the value of the key "name"
+print(my_dict.get("country")) # This will print None because the key "country" is
