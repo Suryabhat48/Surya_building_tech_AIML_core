@@ -164,10 +164,20 @@
 #     sum=n+calc_sum(n-1)
 #     return sum 
 # print(calc_sum(5))
-list1=[1,2,3,4,5]
-def pr_list(list1, i=0):
-    if(i==len(list1)):
-        return
-    print(list1[i])
-    pr_list(list1, i+1)
-pr_list(list1)
+# list1=[1,2,3,4,5]
+# def pr_list(list1, i=0):
+#     if(i==len(list1)):
+#         return
+#     print(list1[i])
+#     pr_list(list1, i+1)
+# pr_list(list1)
+class Student:
+    def __init__(self,marks1,marks2,marks3):
+        self.marks1=marks1
+        self.marks2=marks2
+        self.marks3=marks3
+    def calc_avg(self):
+        avg=(self.marks1+self.marks2+self.marks3)/3
+        print(avg)
+s1=Student(90,95,85)
+s1.calc_avg()
